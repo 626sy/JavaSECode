@@ -73,7 +73,7 @@ public class ForForDemo06 {
 
         //随即职业
 
-/*        Random r = new Random();
+        Random r = new Random();
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入您的名字：");
         String name = sc.next();
@@ -98,9 +98,12 @@ public class ForForDemo06 {
             case 5:
                 zhiye = "江湖郎中";
                 break;
+            default:
+                System.out.println("江湖郎中");
+                break;
 
         }
-        System.out.println(name + "前十为" +zhiye);*/
+        System.out.println(name + "前十为" +zhiye);
 
 //生成1-100间的随机数，让用户猜
   /*      Scanner sc = new Scanner(System.in);
