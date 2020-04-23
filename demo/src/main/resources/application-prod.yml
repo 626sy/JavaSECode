@@ -1,0 +1,23 @@
+server:
+  port: 80
+  servlet:
+    context-path: /luckymoney
+
+
+
+limit:
+  minMoney: 0.01
+  maxMoney: 200
+  description: 最少发${limit.minMoney}最多发${limit.maxMoney}
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/luckymoney?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

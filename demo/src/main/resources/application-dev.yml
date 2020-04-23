@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /redbag
+
+limit:
+  minMoney: 0.01
+  maxMoney: 500
+  description: 最少发${limit.minMoney}最多发${limit.maxMoney}
