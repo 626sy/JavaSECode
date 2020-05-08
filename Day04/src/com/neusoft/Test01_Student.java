@@ -14,7 +14,6 @@ public class Test01_Student {
     //我们通过对象去访问类中的成员
     //对象名.成员变量
     //对象名.成员方法()；
-
     public static void main(String[] args) {
         //调用 学生类
         //1、创建类：类名 对象名 = new 类名（）
@@ -35,8 +34,4 @@ public class Test01_Student {
         s.study();
         s.eat();
     }
-
-
-
-
 }

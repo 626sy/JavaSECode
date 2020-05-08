@@ -9,24 +9,16 @@ package com.neusoft;
  */
 public class Phone {
 //    成员变量
-    String pinpai;
-    int  price;
-    String color;
-
-
+    String brand;   //品牌
+    int  price;     //价格
+    String color;   //颜色
     //成员方法
     //给name打电话
     public void Called(String  name){
         System.out.println("给"+name+"打电话");
-
     }
-    //给
-    public void Email(){
-        System.out.println(" ");
-
+    //发短信
+    public void SendMessage(){
+        System.out.println("发短信");
     }
-
-
-
-
 }
