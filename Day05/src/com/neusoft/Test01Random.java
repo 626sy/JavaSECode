@@ -12,6 +12,7 @@ public class Test01Random {
         // Random 类用于生成伪随机数
         Random random = new Random();
         int i = random.nextInt(100);
+        //bound后的数：左闭右开
         System.out.println(i);
 
     }
