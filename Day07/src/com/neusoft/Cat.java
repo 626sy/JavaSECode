@@ -5,6 +5,7 @@ package com.neusoft;
  * @date 2020/5/31 16:15
  */
 public class Cat extends Animal {
+    private String name;
     //无参的构造
     Cat(){
         super();

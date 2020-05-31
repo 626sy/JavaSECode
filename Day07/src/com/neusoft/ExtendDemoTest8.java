@@ -12,6 +12,6 @@ public class ExtendDemoTest8 {
 //        cat.eatTest();
         Cat cat1 = new Cat("淘气猫");
 
-
+        new Object();
     }
 }

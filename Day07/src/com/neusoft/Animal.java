@@ -6,10 +6,10 @@ package com.neusoft;
  */
 public class Animal {
     Animal()   {
-        System.out.println("Animail");
+        System.out.println("Animail()");
     }
 
     public void eat(){
-        System.out.println();
+        System.out.println("animail:eat");
     }
 }
