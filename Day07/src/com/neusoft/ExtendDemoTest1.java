@@ -10,6 +10,9 @@ public class ExtendDemoTest1 {
 
         //属性赋值
         teacher.name = "小明";
-        
+        //调用 printName方法
+        teacher.printName();
+        // 调用父类的方法
+        teacher.work();
     }
 }
