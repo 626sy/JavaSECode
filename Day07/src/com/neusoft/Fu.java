@@ -6,7 +6,7 @@ package com.neusoft;
  */
 public class Fu {
     int num = 5;
-    //
+
     public void show_fu(){
         System.out.println("父类的show_fu方法执行");
     }
