@@ -10,13 +10,13 @@ public class UniverseTest {
         star.shine();
         System.out.println("============");
 
-        Universe sun = new Sun();
-        sun.doAnything();
+        Universe universe = new Sun();
+        universe.doAnything();
 
-        Sun star1 = (Sun)sun;
-        star1.shine();
+        Sun sun = (Sun) universe;
+        sun.shine();
 
-        }
+    }
 
     }
 

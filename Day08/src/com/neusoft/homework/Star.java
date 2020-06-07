@@ -8,6 +8,6 @@ import org.w3c.dom.ls.LSOutput;
  */
 public class Star {
     public void shine(){
-        System.out.println("星星一闪一闪亮晶晶");
+        System.out.println("star:星星一闪一闪亮晶晶");
     }
 }

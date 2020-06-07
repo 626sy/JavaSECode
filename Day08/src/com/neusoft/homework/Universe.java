@@ -1,5 +1,5 @@
 package com.neusoft.homework;
 
 public interface Universe {
-     abstract void doAnything();
+     public abstract void doAnything();
 }
