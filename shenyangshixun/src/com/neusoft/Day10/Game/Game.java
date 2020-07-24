@@ -14,6 +14,7 @@ public class Game {
         number = 2;
         list = new ArrayList<String>();
         list.add("asdfsdf");
+        list.add("lisi");
 
     }
 }
