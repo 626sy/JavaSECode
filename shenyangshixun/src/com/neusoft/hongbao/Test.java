@@ -1,4 +1,4 @@
-package com.neusoft.test3;
+package com.neusoft.hongbao;
 
 import java.util.ArrayList;
 import java.util.Scanner;
