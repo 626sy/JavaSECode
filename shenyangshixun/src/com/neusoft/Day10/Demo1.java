@@ -14,11 +14,12 @@ public class Demo1 {
     public static String arrayToString(int[] arr){
         String s = new String("[");
         // 遍历
-        for (int i = 0; i < arr.length-1; i++) {
+        for (int i = 0; i < arr.length; i++) {
             if (i == arr.length-1){
                 s = s.concat(arr[i] + "]");
             }else {
-                s = s.concat(arr[i] + "#");
+//                s = s.concat(arr[i] + "#");
+                s = s.concat(arr[i] + "=");
             }
         }
         return s;
