@@ -1,4 +1,4 @@
-package com.neusoft.test2;
+package com.neusoft.DuckTest;
 
 /**
  * @author shihaobo
