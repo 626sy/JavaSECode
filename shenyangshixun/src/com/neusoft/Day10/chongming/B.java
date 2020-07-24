@@ -6,6 +6,6 @@ package com.neusoft.Day10.chongming;
  */
 public class B {
     public void methodB(){
-
+        System.out.println("Class B");
     }
 }
