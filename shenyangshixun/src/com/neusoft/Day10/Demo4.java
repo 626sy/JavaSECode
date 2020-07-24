@@ -6,14 +6,14 @@ package com.neusoft.Day10;
  */
 public class Demo4 {
     public static void main(String[] args) {
-//        double d1 = Math.abs(-5);   //绝对值
-//        System.out.println(d1);
-//        double d2 = Math.ceil(-3.3);//返回大于等于参数的最小整数
-//        System.out.println(d2);
-//        double d3 = Math.floor(-3.3);//返回小于等于参数的最小整数
-//        System.out.println(d3);
-//        long d4 = Math.round(5.5);//四舍五入
-//        System.out.println(d4);
+        double d1 = Math.abs(-5);   //绝对值
+        System.out.println(d1);
+        double d2 = Math.ceil(-3.3);//返回大于等于参数的最小整数
+        System.out.println(d2);
+        double d3 = Math.floor(-3.3);//返回小于等于参数的最小整数
+        System.out.println(d3);
+        long d4 = Math.round(5.5);//四舍五入
+        System.out.println(d4);
 
 
         //计算 -10.8到5.9之间，绝对值大于6小于2.1的整数有多少个
