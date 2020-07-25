@@ -7,6 +7,6 @@ package com.neusoft.DayJU25.InnerClassDemo2;
 public class Bat extends FlyAble {
     @Override
     public void fly() {
-
+        System.out.println("Bat fly");
     }
 }

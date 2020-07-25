@@ -6,5 +6,4 @@ package com.neusoft.DayJU25.InnerClassDemo2;
  */
 public abstract class FlyAble {
     public abstract void fly();
-
 }
