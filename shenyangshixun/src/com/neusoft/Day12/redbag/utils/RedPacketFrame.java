@@ -1,4 +1,6 @@
-package com.neusoft.utilsfor;
+package com.neusoft.Day12.redbag.utils;
+
+import com.neusoft.Day12.redbag.utils.OpenMode;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,7 +21,7 @@ public abstract class RedPacketFrame extends JFrame {
 
     private static final long serialVersionUID = 1L;
 
-    private static final String DIR = "C:\\Users\\Eric\\Documents\\GitHub\\redbag\\pic";
+    private static final String DIR = "G:\\java石浩博\\实训\\GitHub\\JavaSECode\\shenyangshixun\\pic";
 
     private ArrayList<Integer> moneyList = null;
 
@@ -447,7 +449,34 @@ public abstract class RedPacketFrame extends JFrame {
      * **********************************************************************
      * ======================================================================
      */
+    /**
+     * ownerName 群主名称
+     */
+    private String ownerName = "爱谁谁";
+    /**
+     * openWay 红包的类型【普通红包、手气红包】
+     */
 
+    private OpenMode openWay = null;
 
+    /**
+     * 构造方法
+     * title 界面的标题
+     */
+    public RedPacketFrame(String title) {
+        super(title);
+        // 页面相关初始化的方法
+        init();
 
+    }
+    /**
+     * 生成 ownerName和 OpenWay的set方法
+     */
+    public void setOwnerName(String ownerName) {
+        this.ownerName = ownerName;
+    }
+
+    public void setOpenWay(OpenMode openWay) {
+        this.openWay = openWay;
+    }
 }
