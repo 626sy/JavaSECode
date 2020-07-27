@@ -10,11 +10,11 @@ import java.util.ArrayList;
  */
 public class NormalMode implements OpenMode {
     @Override
-    public ArrayList<Integer> divide(final int totalMoey, final int totalCount) {
+    public ArrayList<Integer> divide(final int totalMoney, final int totalCount) {
         ArrayList<Integer> list = new ArrayList<>();
         // 100/3
-        int avg = totalMoey / totalCount;
-        int mod = totalMoey % totalCount;   //零头
+        int avg = totalMoney / totalCount;
+        int mod = totalMoney % totalCount;   //零头
         for (int i = 0; i < totalCount - 1; i++) {
             list.add(avg);
         }

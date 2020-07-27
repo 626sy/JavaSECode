@@ -4,5 +4,5 @@ import java.util.ArrayList;
 
 public interface OpenMode {
     //
-    ArrayList<Integer> divide(int totalMoey, int totalCount);
+    ArrayList<Integer> divide(int totalMoney, int totalCount);
 }
