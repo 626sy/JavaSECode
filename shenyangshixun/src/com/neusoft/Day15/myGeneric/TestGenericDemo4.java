@@ -17,6 +17,8 @@ public class TestGenericDemo4 {
 //        getElement1(list2); // 报错
 //        getElement1(list3);
 //        getElement1(list4); // 报错
+
+
 //        getElement2(list1); // 报错
 //        getElement2(list2); // 报错
 //        getElement2(list3);
