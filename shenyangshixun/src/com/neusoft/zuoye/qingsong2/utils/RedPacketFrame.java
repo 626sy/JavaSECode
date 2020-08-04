@@ -1,6 +1,6 @@
 package com.neusoft.zuoye.qingsong2.utils;
 
-import com.neusoft.Day12.myredbag.utils.OpenWay;
+
 
 import javax.swing.*;
 import java.awt.*;

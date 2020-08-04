@@ -13,5 +13,7 @@ public class bootstrap {
         // 设置红包方式
         NormalMode1 normalMode1 = new NormalMode1();
         myRed.setOpenWay(normalMode1);
+        RandomMode1 randomMode1 = new RandomMode1();
+        myRed.setOpenWay(randomMode1);
     }
 }

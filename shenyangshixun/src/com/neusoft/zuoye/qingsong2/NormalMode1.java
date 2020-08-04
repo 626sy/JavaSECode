@@ -10,11 +10,11 @@ import java.util.ArrayList;
  */
 public class NormalMode1 implements HongbaoMode {
     @Override
-    public ArrayList<Integer> divide(int totalMoney, int count) {
+    public ArrayList<Integer> divide(int totalMoney, int totalcount) {
         ArrayList<Integer> list = new ArrayList<>();
-        int avg = totalMoney/count;
-        int mod = totalMoney%count;
-        for (int i = 0; i < count - 1; i++) {
+        int avg = totalMoney/totalcount;
+        int mod = totalMoney%totalcount;
+        for (int i = 0; i < totalcount - 1; i++) {
             list.add(avg);
         }
         list.add(avg+mod);
