@@ -13,7 +13,11 @@ import java.util.List;
 public class JDBCemp {
     public static void main(String[] args) {
         // 定义一个方法 查询emp表中所有的值
-        new JDBCemp().findAll();
+        List<Emp> list = new JDBCemp().findAll();
+        for(Emp emp:list){
+            System.out.print(emp);
+        }
+
     }
 
     public List<Emp> findAll(){
@@ -45,9 +49,11 @@ public class JDBCemp {
                 emp.setDeptno(rs.getInt(8));
                 list.add(emp);
 
+
+                // 封装成一个对象
             }
 
-            System.out.print(list);
+
 
         }catch (ClassCastException e){
             e.printStackTrace();
