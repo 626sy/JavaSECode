@@ -1,4 +1,4 @@
-package com.neusoft.JDBC.utils;
+package com.neusoft.JDBC.empselectDemo.domain2.utils;
 
 import com.alibaba.druid.pool.DruidDataSourceFactory;
 

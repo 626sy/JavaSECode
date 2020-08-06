@@ -1,6 +1,6 @@
 package com.neusoft.JDBC.empselectDemo.domain2;
 
-import com.neusoft.JDBC.utils.JDBCUtils;
+import com.neusoft.JDBC.empselectDemo.domain2.utils.JDBCUtils;
 
 import java.sql.*;
 import java.util.ArrayList;
