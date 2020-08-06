@@ -2,10 +2,7 @@ package com.neusoft.JDBC.empselectDemo.domain2;
 
 import com.neusoft.JDBC.empselectDemo.domain2.utils.JDBCUtils;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.Scanner;
 
 /**
@@ -31,20 +28,25 @@ public class JDBCLoginDemo2 {
             return false;
         }
         Connection comm = null;
-        Statement stmt = null;
+        PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {
             comm = JDBCUtils.getConnection();
-            String sql = "select * from  user where username = '"+username+"' and password = '"+password+"';";
+            String sql = "select * from user where username = ? and password = ?";
             System.out.println(sql);
-            stmt = comm.createStatement();
-            rs = stmt.executeQuery(sql);
+            // 先获执行sql 的对象PreparedStatement
+            pstmt = comm.prepareStatement(sql);
+            // 给sql赋值
+            pstmt.setString(1,username);
+            pstmt.setString(2,password);
+            // 执行查询，不需要传递sql
+            rs = pstmt.executeQuery();
             return rs.next();
 
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
-            JDBCUtils.close(stmt,comm,rs);
+            JDBCUtils.close(pstmt,comm,rs);
         }
 
         return true;
