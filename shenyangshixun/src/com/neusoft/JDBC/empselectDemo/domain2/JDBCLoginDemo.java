@@ -43,11 +43,12 @@ public class JDBCLoginDemo {
             // sql
             String sql = "select * from  user where username = '"+userName+"' and password = '"+password+"';";
             StringBuilder sql2 = new StringBuilder("select * from user where username = '")
-                    .append(userName).append("' and password = '").append(password);
-            System.out.println(sql);
+                    .append(userName).append("' and password = '").append(password).append("'");
+//            System.out.println(sql);
+            System.out.println(sql2);
 
             stmt = conn.createStatement();
-            rs = stmt.executeQuery(sql);
+            rs = stmt.executeQuery(String.valueOf(sql2));
             return rs.next(); // 如果有下一行， 就返回true
 
         } catch (SQLException e) {
