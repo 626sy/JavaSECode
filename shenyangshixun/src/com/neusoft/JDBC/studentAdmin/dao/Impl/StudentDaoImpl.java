@@ -78,9 +78,14 @@ public class StudentDaoImpl implements StudentDao {
             pstmt.setInt(4,student.getScore());
             pstmt.setString(5,student.getAddress());
             pstmt.setString(6,student.getPhone());
-//            int count = pstmt.executeUpdate();
+            int count = pstmt.executeUpdate();
 //            System.out.println(count);
-            System.out.println(pstmt);
+//            System.out.println(pstmt);
+            if (count>0){
+                System.out.println("更新成功");
+            }else {
+                System.out.println("更新失败");
+            }
 
 
         } catch (SQLException e) {
@@ -117,7 +122,8 @@ public class StudentDaoImpl implements StudentDao {
     }
 
     @Override
-    public void update(Integer id) {
+    public void update(Integer id)
+    {
         Connection conn = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;

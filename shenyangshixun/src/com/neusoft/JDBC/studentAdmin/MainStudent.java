@@ -22,7 +22,8 @@ public class MainStudent {
         System.out.println("------保存学生------");
         // new Student
         Student student = new Student(2,"李四","男",30,"沈阳","150000");
-        studentDao.save(student);
+        Student student2 = new Student(6,"李四","男",30,"哈尔滨","100000");
+        studentDao.save(student2);
 
         // 修改
 
