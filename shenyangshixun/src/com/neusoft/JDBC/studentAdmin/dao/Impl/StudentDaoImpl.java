@@ -137,6 +137,8 @@ public class StudentDaoImpl implements StudentDao {
             System.out.println(count);
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally {
+            JDBCUtils.close(pstmt,conn);
         }
     }
 }
