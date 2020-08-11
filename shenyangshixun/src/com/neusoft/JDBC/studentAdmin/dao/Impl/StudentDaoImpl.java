@@ -108,7 +108,7 @@ public class StudentDaoImpl implements StudentDao {
             pstmt = conn.prepareStatement(sql);
             pstmt.setInt(1,id);
             System.out.println(pstmt);
-//            int count = pstmt.executeUpdate();
+//            int count = pstmt.executeUpdat    e();
 //            System.out.println(count);
         } catch (SQLException e) {
             e.printStackTrace();
